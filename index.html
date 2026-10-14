@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="fr-BE">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cemil SERTTAS — Portfolio</title>
+    <meta
+      name="description"
+      content="Étudiant en e-Business à la HEPL, spécialisé en Data Analyst, Business Analyst et Marketing Digital."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cemil SERTTAS — Portfolio" />
+    <meta
+      property="og:description"
+      content="Étudiant en e-Business à la HEPL, spécialisé en Data Analyst, Business Analyst et Marketing Digital."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:image" content="assets/profile.png" />
+    <meta name="twitter:image" content="assets/profile.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23171717'/><text x='50' y='55' font-family='sans-serif' font-size='46' font-weight='bold' fill='%238bf545' text-anchor='middle' dominant-baseline='middle'>CS</text></svg>"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div class="progress-bar" id="progressBar"></div>
+
+    <!-- ===== PHOTO COLUMN — Fixed background at top, transitions to right column on scroll ===== -->
+    <div class="photo-column" id="photoColumn">
+      <div class="photo-overlay" id="photoOverlay"></div>
+      <img src="assets/profile.png" alt="Cemil SERTTAS" id="heroImg" />
+    </div>
+
+    <!-- ===== NAVIGATION ===== -->
+    <!-- ===== NAVIGATION & LANGUAGE SWITCHER ===== -->
+    <nav class="nav">
+      <div class="nav-left">
+        <div class="lang-switch">
+          <a href="#" class="lang-switch-btn active" data-lang="fr">FR</a>
+          <a href="#" class="lang-switch-btn" data-lang="en">EN</a>
+          <a href="#" class="lang-switch-btn" data-lang="nl">NL</a>
+        </div>
+      </div>
+      
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-pills">
+        <a
+          href="#about"
+          class="nav-link"
+          data-fr="À propos"
+          data-en="About"
+          data-nl="Over mij"
+          >À propos</a
+        >
+        <a
+          href="#experience"
+          class="nav-link"
+          data-fr="Expérience"
+          data-en="Experience"
+          data-nl="Ervaring"
+          >Expérience</a
+        >
+        <a
+          href="#education"
+          class="nav-link"
+          data-fr="Formation"
+          data-en="Education"
+          data-nl="Opleiding"
+          >Formation</a
+        >
+        <a
+          href="#skills"
+          class="nav-link"
+          data-fr="Compétences"
+          data-en="Skills"
+          data-nl="Vaardigheden"
+          >Compétences</a
+        >
+        <a
+          href="#projects"
+          class="nav-link"
+          data-fr="Projets"
+          data-en="Projects"
+          data-nl="Projecten"
+          >Projets</a
+        >
+        <a
+          href="#contact"
+          class="nav-link"
+          data-fr="Contact"
+          data-en="Contact"
+          data-nl="Contact"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- Menu Backdrop Overlay (mobile/tablet) -->
+    <div class="menu-backdrop" id="menuBackdrop"></div>
+
+    <!-- ===== HERO — Match Max Becker / Profiler Layout ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-container">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span
+            data-fr="Disponible pour une alternance"
+            data-en="Available for work-study"
+            data-nl="Beschikbaar voor werk-leertraject"
+            >Disponible pour une alternance</span
+          >
+        </div>
+
+        <h1 class="hero-name">
+          Cemil Serttas
+        </h1>
+
+        <div class="hero-divider"></div>
+
+        <div class="hero-bottom-grid" id="about">
+          <div class="hero-label-col">
+            <span class="hero-num">00</span>
+            <span
+              class="hero-label-text"
+              data-fr="À propos"
+              data-en="About"
+              data-nl="Over mij"
+              >À propos</span
+            >
+          </div>
+          <div class="hero-desc-col">
+            <h2
+              class="text-heading"
+              data-html="true"
+              data-fr="Je transforme les <span class='italic'>données</span> en décisions et les idées en <span class='italic'>stratégies</span> digitales."
+              data-en="I transform <span class='italic'>data</span> into decisions and ideas into digital <span class='italic'>strategies</span>."
+              data-nl="Ik transformeer <span class='italic'>data</span> in beslissingen en ideeën in digitale <span class='italic'>strategieën</span>."
+            >
+              Je transforme les <span class="italic">données</span> en décisions
+              et les idées en <span class="italic">stratégies</span> digitales.
+            </h2>
+            <div class="text-body mt-24">
+              <p
+                data-fr="Diplômé en e-Business, je poursuis actuellement un Master en Business Analysis en alternance à l'ICHEC-ECAM."
+                data-en="As an e-Business graduate, I am currently pursuing a Master's in Business Analysis on a work-study basis at ICHEC-ECAM."
+                data-nl="Als afgestudeerde in e-Business volg ik momenteel een Master in Business Analysis als werkstudent aan de ICHEC-ECAM."
+              >
+                Diplômé en e-Business, je poursuis actuellement un Master en Business Analysis en alternance à l'ICHEC-ECAM.
+              </p>
+              <p
+                data-fr="Doté d'une double compétence technique et stratégique, je traduis les besoins complexes métiers en solutions digitales pour optimiser les processus internes."
+                data-en="With a hybrid technical and strategic skillset, I translate complex business needs into digital solutions to optimize internal processes."
+                data-nl="Met een hybride technische en strategische skillset vertaal ik complexe zakelijke behoeften naar digitale oplossingen om interne processen te optimaliseren."
+              >
+                Doté d'une double compétence technique et stratégique, je traduis les besoins complexes métiers en solutions digitales pour optimiser les processus internes.
+              </p>
+              <p
+                data-fr="Je suis particulièrement passionné par l'implémentation de l'Intelligence Artificielle et l'analyse de la data pour générer de l'impact concret."
+                data-en="I am particularly passionate about the implementation of Artificial Intelligence and data analysis to generate tangible impact."
+                data-nl="Ik ben vooral gepassioneerd door de implementatie van Kunstmatige Intelligentie en data-analyse om tastbare impact te genereren."
+              >
+                Je suis particulièrement passionné par l'implémentation de l'Intelligence Artificielle et l'analyse de la data pour générer de l'impact concret.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MAIN CONTENT — Left column, scrolls, black bg ===== -->
+    <main class="main-content">
+      <!-- 01 EXPERIENCE -->
+      <section class="section-block reveal" id="experience">
+        <div class="section-label">
+          <span class="hero-num">01</span><span class="section-label-text" data-fr="Expérience" data-en="Experience" data-nl="Ervaring">Expérience</span>
+        </div>
+        <div class="section-content">
+          <div class="timeline">
+            <!-- Ecostal Stagiaire -->
+            <div class="timeline-row">
+              <div class="timeline-year">02/2026<br>05/2026</div>
+              <div class="timeline-line"></div>
+              <div class="timeline-content">
+                <h3 class="timeline-title" data-fr="Stagiaire Business Analyst" data-en="Business Analyst Intern" data-nl="Business Analyst Stagiair">Stagiaire Business Analyst</h3>
+                <p class="timeline-company">Ecostal Group, Barchon</p>
+                <p class="timeline-desc" data-fr="Audit fonctionnel, optimisation UI/UX, analyse de data marketing. Développement d'un outil IA pour croiser les données clients et réactiver les inactifs." data-en="Functional audit, UI/UX optimization, marketing data analysis. Development of an AI tool to cross-reference customer data and reactivate dormant accounts." data-nl="Functionele audit, UI/UX-optimalisatie, marketing data-analyse. Ontwikkeling van een AI-tool om klantgegevens te kruisen en inactieve accounts te reactiveren.">
+                  Audit fonctionnel, optimisation UI/UX, analyse de data marketing. Développement d'un outil IA pour croiser les données clients et réactiver les inactifs.
+                </p>
+              </div>
+            </div>
+            <!-- Ecostal Job Etudiant -->
+            <div class="timeline-row">
+              <div class="timeline-year">07/2025<br>08/2025</div>
+              <div class="timeline-line"></div>
+              <div class="timeline-content">
+                <h3 class="timeline-title" data-fr="Job Étudiant - IT & Data" data-en="Student Job - IT & Data" data-nl="Studentenjob - IT & Data">Job Étudiant - IT & Data</h3>
+                <p class="timeline-company">Ecostal Group, Barchon</p>
+                <p class="timeline-desc" data-fr="Analyse de données et audit d'un e-Shop Shopify intégré à Odoo. Gestion du backend, enrichissement des données produits et optimisation SEO." data-en="Data analysis and audit of a Shopify e-Shop linked to Odoo. Backend management, product data enrichment, and SEO optimization." data-nl="Data-analyse en audit van een Shopify e-Shop gekoppeld aan Odoo. Backend-beheer, productgegevensverrijking en SEO-optimalisatie.">
+                  Analyse de données et audit d'un e-Shop Shopify intégré à Odoo. Gestion du backend, enrichissement des données produits et optimisation SEO.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 EDUCATION -->
+      <section class="section-block reveal" id="education">
+        <div class="section-label">
+          <span class="hero-num">02</span><span class="section-label-text" data-fr="Études" data-en="Education" data-nl="Opleiding">Études</span>
+        </div>
+        <div class="section-content">
+          <div class="timeline">
+            <!-- HEPL -->
+            <div class="timeline-row">
+              <div class="timeline-year">2023 - 2026</div>
+              <div class="timeline-line"></div>
+              <div class="timeline-content">
+                <h3 class="timeline-title" data-fr="Bachelier en e-Business" data-en="Bachelor in e-Business" data-nl="Bachelor in e-Business">Bachelier en e-Business</h3>
+                <p class="timeline-company">Haute École de la Province de Liège (HEPL)</p>
+              </div>
+            </div>
+            <!-- HELMo -->
+            <div class="timeline-row">
+              <div class="timeline-year">2022 - 2023</div>
+              <div class="timeline-line"></div>
+              <div class="timeline-content">
+                <h3 class="timeline-title" data-fr="Bachelier en Développement d'Applications" data-en="Bachelor in Application Development" data-nl="Bachelor Applicatieontwikkeling">Bachelier en Développement d'Applications</h3>
+                <p class="timeline-company">HELMo</p>
+              </div>
+            </div>
+            <!-- CESS -->
+            <div class="timeline-row">
+              <div class="timeline-year">2020 - 2022</div>
+              <div class="timeline-line"></div>
+              <div class="timeline-content">
+                <h3 class="timeline-title" data-fr="CESS & Technicien Informatique" data-en="CESS & IT Technician Qualification" data-nl="CESS & IT-Technicus">CESS & Technicien Informatique</h3>
+                <p class="timeline-company">Don Bosco Verviers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 SKILLS (Includes Languages) -->
+      <section class="section-block reveal" id="skills">
+        <div class="section-label">
+          <span class="hero-num">03</span><span class="section-label-text" data-fr="Compétences" data-en="Skills" data-nl="Vaardigheden">Compétences</span>
+        </div>
+        <div class="section-content">
+          <!-- Main Skills Tags -->
+          <div class="skills-tag-list flex-wrap-gap-8 mb-48">
+            <span class="interest-tag" data-fr="Business Analysis" data-en="Business Analysis" data-nl="Business Analysis">Business Analysis</span>
+            <span class="interest-tag" data-fr="Intelligence Artificielle" data-en="Artificial Intelligence" data-nl="Kunstmatige Intelligentie">Intelligence Artificielle</span>
+            <span class="interest-tag" data-fr="Analyse de données" data-en="Data Analysis" data-nl="Data-analyse">Analyse de données</span>
+            <span class="interest-tag" data-fr="Développement Web" data-en="Web Development" data-nl="Webontwikkeling">Développement Web</span>
+            <span class="interest-tag" data-fr="Gestion de Projets" data-en="Project Management" data-nl="Projectbeheer">Gestion de Projets</span>
+            <span class="interest-tag" data-fr="Marketing Digital" data-en="Digital Marketing" data-nl="Digitale Marketing">Marketing Digital</span>
+            <span class="interest-tag" data-fr="Odoo ERP" data-en="Odoo ERP" data-nl="Odoo ERP">Odoo ERP</span>
+            <span class="interest-tag" data-fr="Shopify" data-en="Shopify" data-nl="Shopify">Shopify</span>
+          </div>
+
+          <!-- Languages List -->
+          <div class="text-overline mb-16" data-fr="Langues" data-en="Languages" data-nl="Talen">Langues</div>
+          <div class="skills-tag-list flex-wrap-gap-8">
+            <span class="interest-tag lang-tag-custom"><span data-fr="Français" data-en="French" data-nl="Frans">Français</span> <strong class="lang-level-custom">C2</strong></span>
+            <span class="interest-tag lang-tag-custom"><span data-fr="Turc" data-en="Turkish" data-nl="Turks">Turc</span> <strong class="lang-level-custom">C2</strong></span>
+            <span class="interest-tag lang-tag-custom"><span data-fr="Anglais" data-en="English" data-nl="Engels">Anglais</span> <strong class="lang-level-custom">B2-C1</strong></span>
+            <span class="interest-tag lang-tag-custom"><span data-fr="Allemand" data-en="German" data-nl="Duits">Allemand</span> <strong class="lang-level-custom">B2</strong></span>
+            <span class="interest-tag lang-tag-custom"><span data-fr="Néerlandais" data-en="Dutch" data-nl="Nederlands">Néerlandais</span> <strong class="lang-level-custom">A2</strong></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 PROJECTS -->
+      <section class="section-block reveal" id="projects">
+        <div class="section-label">
+          <span class="hero-num">04</span><span class="section-label-text" data-fr="Prix & Réalisations" data-en="Awards & Projects" data-nl="Prijzen & Projecten">Prix & Réalisations</span>
+        </div>
+        <div class="section-content">
+          <div class="projects-list">
+            <!-- Project 1 (Innovation Camp) -->
+            <div class="project-item">
+              <div class="project-info">
+                <h4 class="project-title" data-fr="1er Prix - Innovation Camp 2024" data-en="1st Prize - Innovation Camp 2024" data-nl="1e Prijs - Innovation Camp 2024">1er Prix - Innovation Camp 2024</h4>
+                <p data-fr="Mise en place d'une stratégie innovante pour digitaliser le fonctionnement de la collecte de TERRE ASBL. Premier prix remporté parmi 300 étudiants, remis par la Ministre de l'Économie sociale." data-en="Implementation of an innovative strategy to digitize the collection operations of TERRE ASBL. First prize won among 300 students, awarded by the Minister of Social Economy." data-nl="Implementatie van een innovatieve strategie om de inzamelactiviteiten van TERRE ASBL te digitaliseren. Eerste prijs gewonnen onder 300 studenten.">
+                  Mise en place d'une stratégie innovante pour digitaliser le fonctionnement de la collecte de TERRE ASBL. Premier prix remporté parmi 300 étudiants, remis par la Ministre de l'Économie sociale.
+                </p>
+                <div class="project-tags">
+                  <span>Stratégie Digitale</span><span>Innovation</span><span>Pitch</span>
+                </div>
+              </div>
+            </div>
+            <!-- Ecostal AI Tool -->
+            <div class="project-item">
+              <div class="project-info">
+                <h4 class="project-title" data-fr="Outil IA - Ecostal Group" data-en="AI Tool - Ecostal Group" data-nl="AI Tool - Ecostal Group">Outil IA - Ecostal Group</h4>
+                <p data-fr="Développement d'un outil avec l'Intelligence Artificielle pour automatiser la veille concurrentielle et croiser les données clients dans le but d'activer les comptes inactifs." data-en="Development of an Artificial Intelligence powered tool to automate competitive intelligence and cross-reference customer data to reactivate dormant accounts." data-nl="Ontwikkeling van een AI-tool om concurrentie-informatie te automatiseren en klantgegevens te kruisen om inactieve accounts te reactiveren.">
+                  Développement d'un outil avec l'Intelligence Artificielle pour automatiser la veille concurrentielle et croiser les données clients dans le but d'activer les comptes inactifs.
+                </p>
+                <div class="project-tags">
+                  <span>IA</span><span>Automatisation</span><span>Data</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      </main>
+
+    <!-- ===== BOTTOM REVEAL (Contact + Footer) ===== -->
+    <div class="bottom-reveal-section">
+      <!-- 05 CONTACT -->
+      <section class="section-block reveal contact-section" id="contact">
+        <div class="section-label">
+          <span class="hero-num">05</span><span class="section-label-text" data-fr="Contact" data-en="Contact" data-nl="Contact">Contact</span>
+        </div>
+        <div class="section-content">
+          <div class="cta-block">
+            <h2 class="cta-heading" data-html="true" data-fr="Travaillons<br><span class='italic'>ensemble</span>" data-en="Let's work<br><span class='italic'>together</span>" data-nl="Laten we<br><span class='italic'>samenwerken</span>">
+              Travaillons<br /><span class="italic">ensemble</span>
+            </h2>
+            <p class="text-body" data-fr="Je suis à la recherche d'une entreprise pour mon Master en Business Analysis en alternance (ICHEC-ECAM)." data-en="I am seeking a company for my Master's in Business Analysis on a work-study basis (ICHEC-ECAM)." data-nl="Ik ben op zoek naar een bedrijf voor mijn Master in Business Analysis als werkstudent (ICHEC-ECAM).">
+              Je suis à la recherche d'une entreprise pour mon Master en Business Analysis en alternance (ICHEC-ECAM).
+            </p>
+            
+            <div class="mt-24">
+              <a href="mailto:cemil.serttas@student.hepl.be" class="btn btn-primary" style="display:inline-flex;">
+                <span data-fr="Me contacter" data-en="Contact me" data-nl="Neem contact op">Me contacter</span>
+              </a>
+            </div>
+            
+            <div class="text-overline mt-16" data-fr="Réseaux" data-en="Socials" data-nl="Socials">Réseaux</div>
+            <div class="cta-links">
+              <a href="https://www.linkedin.com/in/cemil-serttas" target="_blank" rel="noopener" class="link-underline">
+                <span class="link-underline-text">LinkedIn</span><span class="link-underline-line"></span>
+              </a>
+              <a href="https://github.com/cemilserttas" target="_blank" rel="noopener" class="link-underline">
+                <span class="link-underline-text">GitHub</span><span class="link-underline-line"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer-centered reveal mt-80">
+        <p class="footer-tagline" data-fr="Pour l'amour du design." data-en="For the love of design." data-nl="Voor de liefde voor design.">Pour l'amour du design.</p>
+        <div class="footer-signature reveal">
+          <!-- Animated SVG Signature -->
+          <svg class="signature-svg" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 40,70 Q 20,20 60,30 T 70,70 Q 80,40 100,50 Q 120,40 130,70 Q 140,50 150,70 Q 160,40 170,70 Q 180,50 185,70 L 190,60 M 210,50 Q 190,10 170,40 Q 160,80 200,90 Q 240,100 250,60 Q 260,50 270,70 Q 280,40 290,60 Q 300,50 310,70" />
+          </svg>
+        </div>
+        <h3 class="footer-name">Cemil Serttas</h3>
+        <div class="footer-bar-centered">
+          <span>© <span id="copyrightYear">2025</span> Cemil SERTTAS</span>
+        </div>
+      </footer>
+    </div>
+    
+    <!-- ===== SCROLL INDICATOR ===== -->
+    <a href="#hero" class="scroll-indicator" id="scrollIndicator">
+      <span class="scroll-text" id="scrollText" data-fr="Défiler" data-en="Scroll" data-nl="Scrollen">Défiler</span>
+      <svg class="scroll-icon" id="scrollIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 5v14"></path>
+        <path d="m19 12-7 7-7-7"></path>
+      </svg>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
